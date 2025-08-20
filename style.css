@@ -1,0 +1,221 @@
+:root {
+    --color-primary: #000;
+    --color-secondary: #A35C7A;
+    --color-tertiary: #C4C4C4;
+    --color-button: #c491a6;
+    --color-button-hover: #f8c3d9;
+    --color-text: #444444;
+    --color-white: #FFFFFF;
+}
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+/* Banner */
+.header-banner {
+    flex: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: ;
+   
+}
+
+/* Sección de entrada */
+.input-section {
+    flex: 60%;
+    background-color: var(--color-secondary);
+    border: 1px solid #000;
+    border-radius: 64px 64px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Títulos */
+.main-title {
+    font-size: 70px;
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 300px;
+    font-style: normal;
+    color: var(--color-white);
+    padding-left: 400px;
+    
+}
+
+.section-title {
+    font-family: "Inter", serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin: 10px 0;
+    text-align: center;
+}
+.imagen_gato{
+   height:500px;
+}
+
+
+
+/* Contenedores de entrada y botón */
+.input-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.input-name {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 25px 0 0 25px;
+    font-size: 16px;
+}
+
+.button-container {
+    width: 300px;
+    justify-content: center;
+}
+
+/* Estilos de entrada de texto */
+.input-title {
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #333;
+    border-right: none;
+    border-radius: 25px 0 0 25px;
+    font-family: "Merriweather", serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos de botón */
+button {
+    padding: 15px 30px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    border: 2px solid #000;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.button-add {
+    background-color: var(--color-tertiary);
+    color: var(--color-text);
+    border-radius: 0 25px 25px 0;
+}
+
+.button-add:hover {
+    background-color: #a1a1a1;
+}
+
+/* Listas */
+ul {
+    list-style-type: none;
+    color: var(--color-text);
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.result-list {
+    margin-top: 15px;
+    color: #8D0B41;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* espacio entre los botones */
+    margin-top: 20px; 
+}
+/* Botón de sortear título */
+.button-draw {
+    display: flex;
+    align-items: center;     /* centra ícono y texto en la misma línea */
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 30px;
+    background-color: var(--color-button);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease; 
+    white-space: nowrap;  
+}
+
+.button-draw img {
+    width: 20px;
+    height: 20px;
+    margin: 0; 
+}
+
+.button-draw:hover {
+    background-color: var(--color-button-hover);
+}
+ .button-clear {
+    display: flex;
+    align-items: center;     /* centra ícono y texto en la misma línea */
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 30px;
+    background-color: var(--color-button);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease;
+}
+
+.button-clear img{
+   width: 20px;
+    height: 20px;
+    margin: 0; 
+}
+
+.button-clear:hover {
+    background-color: var(--color-button-hover);
+}
+
+.mensaje-resultado {
+    font-size: 1.5rem;  
+    font-style: oblique;      
+    color: #6A1E55;           
+    text-align: center;        
+    margin-top: 20px;          
+    padding: 10px 20px;       
+    
+}
