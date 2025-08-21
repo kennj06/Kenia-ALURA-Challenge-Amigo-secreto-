@@ -154,13 +154,13 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px; /* espacio entre los botones */
+    gap: 15px; 
     margin-top: 20px; 
 }
 /* Botón de sortear título */
 .button-draw {
     display: flex;
-    align-items: center;     /* centra ícono y texto en la misma línea */
+    align-items: center;     
     justify-content: center;
     gap: 10px;
     padding: 12px 30px;
@@ -186,7 +186,7 @@ ul {
 }
  .button-clear {
     display: flex;
-    align-items: center;     /* centra ícono y texto en la misma línea */
+    align-items: center;     
     justify-content: center;
     gap: 10px;
     padding: 10px 30px;
@@ -218,4 +218,5 @@ ul {
     margin-top: 20px;          
     padding: 10px 20px;       
     
+
 }
