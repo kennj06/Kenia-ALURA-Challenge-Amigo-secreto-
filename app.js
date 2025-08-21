@@ -1,7 +1,7 @@
-// Array para almacenar los nombres de amigos
+// Lista donde se guardaran los nombres 
 let amigos = [];
 
-// Obtener referencias a los elementos
+// Referencias a los elementos HTML
 const input = document.getElementById('amigo');
 const lista = document.getElementById('listaAmigos');
 const resultado = document.getElementById('resultado');
@@ -23,10 +23,10 @@ function agregarAmigo() {
         return;
     }
 
-    // Agregar al array
+    // Agregar el nombre al array
     amigos.push(nombre);
 
-    // Limpiar campo de entrada
+    // Limpiar el campo de entrada
     input.value = "";
 
     // Actualizar la lista en pantalla
@@ -64,7 +64,7 @@ function sortearAmigo() {
     mostrarAmigos();
 }
 
-// Función para reiniciar el juego
+// Se agrego la función para reiniciar el juego
 function clearAmigos() {
     amigos = []; // Vaciar array
     lista.innerHTML = "";
@@ -78,3 +78,4 @@ input.addEventListener('keypress', function(event) {
         agregarAmigo();
     }
 });
+
