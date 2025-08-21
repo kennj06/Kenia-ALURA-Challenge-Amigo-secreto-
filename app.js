@@ -54,7 +54,7 @@ function sortearAmigo() {
     const indiceAleatorio = Math.floor(Math.random() * amigos.length);
     const amigoSorteado = amigos[indiceAleatorio];
 
-    // Mostrar resultado
+    // resultado
     resultado.innerHTML = `<li class="mensaje-resultado">Tu amigo secreto es: <strong>${amigoSorteado}</strong></li>`;
 
     // Eliminar el amigo sorteado del array para no repetir
@@ -78,4 +78,5 @@ input.addEventListener('keypress', function(event) {
         agregarAmigo();
     }
 });
+
 
